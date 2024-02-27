@@ -11,5 +11,10 @@
   ],
   "require": {
     "rosell-dk/webp-convert": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "ktropp\\yii2webp\\\\": "src/"
+    }
   }
 }

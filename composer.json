@@ -1,8 +1,7 @@
 {
   "name": "ktropp/yii2-webp",
   "description": "Webp image optimalization for Yii2 and Yii2 image manager",
-  "minimum-stability": "stable",
-  "license": "proprietary",
+  "type": "yii2-extension",
   "authors": [
     {
       "name": "ktropp",
@@ -10,11 +9,12 @@
     }
   ],
   "require": {
+    "yiisoft/yii2": "~2.0.0",
     "rosell-dk/webp-convert": "dev-master"
   },
   "autoload": {
     "psr-4": {
-      "ktropp\\yii2webp\\\\": "src/"
+      "ktropp\\yii2webp\\": "src/"
     }
   }
 }

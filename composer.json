@@ -1,0 +1,15 @@
+{
+  "name": "ktropp/yii2-webp",
+  "description": "Webp image optimalization for Yii2 and Yii2 image manager",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "ktropp",
+      "email": "koder@kareltropp.cz"
+    }
+  ],
+  "require": {
+    "rosell-dk/webp-convert": "dev-master"
+  }
+}

@@ -1,6 +1,6 @@
 <?php
 
-namespace ktropp\yii2_webp;
+namespace ktropp\yii2webp;
 
 use yii\base\Widget;
 use yii\helpers\Html;

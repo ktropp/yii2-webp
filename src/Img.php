@@ -35,7 +35,7 @@ class Img extends Widget
         if (!empty($this->_webp)) {
             $return .= Html::tag('source', '', [$srcset => $this->_webp, 'type' => 'image/webp']);
         }
-        $return .= Html::tag('img', '', [$src => $this->src, 'class' => $class]);
+        $return .= Html::tag('img', '', array_merge([$src => $this->src, 'class' => $class], $this->options));
         $return .= Html::endTag('picture');
 
         return $return;

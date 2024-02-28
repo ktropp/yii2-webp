@@ -29,11 +29,12 @@ class Webp
     public static function get($img)
     {
         $imgFullPath = Yii::getAlias('@webroot') . $img;
-        $webpFilePath = static::getWebpPath($imgFullPath);
-        $webpFileUrl = static::getWebpPath($img);
 
         if (!is_file($imgFullPath))
             return false;
+
+        $webpFilePath = static::getWebpPath($imgFullPath);
+        $webpFileUrl = static::getWebpPath($img);
 
         if(file_exists($webpFilePath))
             return (filesize($webpFilePath) < filesize($imgFullPath) ? $webpFileUrl : false);
